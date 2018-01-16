@@ -39,5 +39,5 @@ def run(component, module_dir, m_input, output = None):
             os.makedirs(filepath)
         file = "%s/%s" % (filepath, filename)
         with open(file, "w") as fh:
-            json.dump(json_output, fh, indent=4, sort_keys=True)
+            json.dump(json_output, fh, indent=4, sort_keys=True, default=lambda x: None)
         print "JSON report saved to %s/%s" % (filepath, filename)
