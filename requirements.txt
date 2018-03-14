@@ -7,6 +7,7 @@ clearbit
 config
 configobj
 dnspython
+flatten_json
 future
 google-api-python-client
 html5lib
